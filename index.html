@@ -9,25 +9,33 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
-     <!-- Styles -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!-- Styles -->
     <link rel="stylesheet" href="assets/styles/S_header.css">
     <link rel="stylesheet" href="assets/styles/S_hero.css">
+    <link rel="stylesheet" href="assets/styles/S_faq.css">
 </head>
 <body>
   <!-- HEADER & NAVBAR -->
     <header>
         <nav class="navbar">
         <div class="logo">
-            <img src="assets/imagenes/icono.png" alt="DriveSmart Logo">
-            <a href="#Inicio">DriveSmart</a>
+            <img src="assets/imagenes/logoH.png" alt="DriveSmart Logo">
         </div>
-        <ul class="nav-links">
+        <!-- Botón de menú hamburguesa -->
+        <button class="hamburguesa" id="hamburguesa" aria-label="Menú">
+         <span class="material-icons">menu</span>
+         </button>
+         <div class="nav-menu" id="nav-menu">
+                    <ul class="nav-links">
             <li><a href="#Inicio">Inicio</a></li>
             <li><a href="#Beneficios">Beneficios</a></li>
             <li><a href="#Nosotros">Nosotros</a></li>
             <li><a href="#Preguntas">Preguntas</a></li>
             <li><a href="#contact">Contacto</a></li>
         </ul>
+         </div>
+
          <div class="navbar_actions">
             <a href="" class="btn-get-started">Iniciar Sesión</a>
             <a href="" class="btn-sign-up">Registrarse</a>
@@ -39,9 +47,9 @@
     <!-- Hero -->
     <section class="hero" id="Inicio">
         <div class="hero-content">
-        <h1>Seguridad | Confianza | Aprendizaje</h1>
-        <p>Aprende junto a nosotros a mejorar tu forma de conducir y aplica buenas practicas al momento de mobilizarte</p>
-        <a href="" class="btn">Empieza ahora</a>
+        <h1 class="hero-title">Seguridad | Confianza | Aprendizaje</h1>
+        <p class="hero-subtitle">Aprende junto a nosotros a mejorar tu forma de conducir y aplica buenas practicas al momento de mobilizarte</p>
+        <a href="" class="hero-button">Empieza ahora</a>
         </div>
     </section>
     <!-- Benefits -->
@@ -70,9 +78,67 @@
         <p> Buscamos convertirnos en la plataforma número 1 de aprendizaje sobre seguridad vial en Latinoamérica, siendo una herramienta intuitiva que ayuda en el aprendizaje en el sector relacionado al tránsito.</p>
         <img src="assets/imagenes/Vision.jpg" alt="Visión" class="about-image">
     </section>
-        <!-- Contact -->    
-    <section class="contact" id="contact"></section>    
-    </main>
+    <!-- FAQ -->
+    <section class="faq" id="Preguntas">
+        <h2>Preguntas Frecuentes</h2>
+        <div class="faq-list">
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text">¿Qué es DriveSmart y cómo funciona?</span>
+                    <span class="material-icons faq-arrow" style="color: #f4f5f7;"   id="faq-arrow">expand_more</span>
+                </div>
+                <div class="faq-answer">
+                    <p>DriveSmart es una plataforma de aprendizaje sobre seguridad vial que ofrece simulaciones de tránsito realistas y módulos educativos para mejorar las habilidades de conducción.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text">¿Para qué me sirven los certificados en DriveSmart?</span>
+                    <span class="material-icons faq-arrow" style="color: #f4f5f7;"   id="faq-arrow">expand_more</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Los certificados en DriveSmart te permiten demostrar tus conocimientos y habilidades en seguridad vial, lo que puede ser útil para tu desarrollo profesional.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text">¿Qué tan segura es mi información en la plataforma?</span>
+                    <span class="material-icons faq-arrow" style="color: #f4f5f7;"   id="faq-arrow">expand_more</span>
+                </div>
+                <div class="faq-answer">
+                    <p>DriveSmart toma la privacidad y seguridad de tus datos muy en serio. Implementamos medidas de seguridad robustas para proteger tu información personal y garantizar que se utilice únicamente para mejorar tu experiencia en la plataforma.</p>
+                </div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text">¿Qué tan realistas son las simulaciones?</span>
+                    <span class="material-icons faq-arrow" style="color: #f4f5f7;"   id="faq-arrow">expand_more</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Las simulaciones de tránsito en DriveSmart están diseñadas para ser lo más realistas posible, utilizando tecnología avanzada para recrear situaciones del mundo real y ofrecer una experiencia de aprendizaje efectiva.</p>
+                </div>
+            </div>
 
+            <div class="faq-item">
+                <div class="faq-question" onclick="toggleFaq(this)">
+                     <span class="faq-text">¿Cómo puedo identificar los cursos más difíciles?</span>
+                    <span class="material-icons faq-arrow" style="color: #f4f5f7;"   id="faq-arrow">expand_more</span>
+                </div>
+                <div class="faq-answer">
+                    <p>Los cursos más difíciles suelen ser aquellos que abordan situaciones de tránsito complejas o que requieren una mayor habilidad para manejar riesgos.</p>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+        <!-- Contact -->    
+    <section class="contact" id="contact"></section>  
+    <!--footer--> 
+        <footer>
+            <p>&copy; 2026 DriveSmart. Todos los derechos reservados.</p> 
+        </footer>
+    </main>
+    <script src="assets/scripts/DesplegablePreguntas.js"></script>
+    <script src="assets/scripts/script.js"></script>
 </body>
-</html>
+</html> 
