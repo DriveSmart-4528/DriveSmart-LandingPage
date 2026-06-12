@@ -1,3 +1,9 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
 /* ===== HEADER ===== */
 header {
     background-color: #8FA8D8;
@@ -36,16 +42,27 @@ header {
 }
 
 .nav-links a {
+    position: relative;
     text-decoration: none;
     color: white;
     font-family: 'DM Sans', sans-serif;
     font-size: 15px;
     font-weight: 500;
-    transition: 0.3s;
 }
 
-.nav-links a:hover {
-    opacity: 0.8;
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    width: 0;
+    height: 3px;
+    background-color: #E68A2E;
+    transition: width 0.3s ease;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
 }
 
 /* ===== BOTONES ===== */
@@ -82,4 +99,49 @@ header {
 .btn-sign-up:hover {
     transform: translateY(-2px);
     opacity: 0.9;
+}
+
+/* Botón hamburguesa oculto en escritorio */
+.hamburguesa {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.hamburguesa .material-icons {
+    color: white;
+    font-size: 32px;
+}
+
+@media (max-width: 768px) {
+
+    .hamburguesa {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        width: 100%;
+        background-color: #8FA8D8;
+        padding: 20px 0;
+        z-index: 1000;
+    }
+
+    .nav-menu.show {
+        display: block;
+    }
+
+    .nav-links {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .navbar_actions {
+        display: none;
+    }
 }
