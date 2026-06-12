@@ -1,13 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="icon" type="image/x-icon" href="assets/imagenes/icono.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>DriveSmart-Landing Page</title>
+    <!--Google Fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+     <!-- Styles -->
+    <link rel="stylesheet" href="assets/styles/S_header.css">
+    <link rel="stylesheet" href="assets/styles/S_hero.css">
 </head>
 <body>
-    <h1>
-Welcome to DriveSmart - Your Ultimate Driving Companion!
-    </h1>
+  <!-- HEADER & NAVBAR -->
+    <header>
+        <nav class="navbar">
+        <div class="logo">
+            <img src="assets/imagenes/icono.png" alt="DriveSmart Logo">
+            <a href="#Inicio">DriveSmart</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#Inicio">Inicio</a></li>
+            <li><a href="#Beneficios">Beneficios</a></li>
+            <li><a href="#Nosotros">Nosotros</a></li>
+            <li><a href="#Preguntas">Preguntas</a></li>
+            <li><a href="#contact">Contacto</a></li>
+        </ul>
+         <div class="navbar_actions">
+            <a href="" class="btn-get-started">Iniciar Sesión</a>
+            <a href="" class="btn-sign-up">Registrarse</a>
+      </div>
+        </nav>
+    </header>
+   
+    <main>
+    <!-- Hero -->
+    <section class="hero" id="Inicio">
+        <div class="hero-content">
+        <h1>Seguridad | Confianza | Aprendizaje</h1>
+        <p>Aprende junto a nosotros a mejorar tu forma de conducir y aplica buenas practicas al momento de mobilizarte</p>
+        <a href="" class="btn">Empieza ahora</a>
+        </div>
+    </section>
+    <!-- Benefits -->
+    <section class="benefits" id="Beneficios"> 
+        <h2>------------- Beneficios -------------</h2> 
+        <div class="benefits-container">
+            <div class="benefit-item">
+                <h3>Simulaciones de tránsito realistas</h3>
+                <p>DriveSmart ofrece simulaciones de situaciones reales de tránsito, lo que permite practicar la toma de decisiones frente a escenarios cotidianos de riesgo.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Aprendizaje mediante módulos</h3>
+                <p>DriveSmart brinda acceso a contenido educativo práctico e interactivo que refuerza hábitos de conducción segura y responsable mediante cursos.</p>
+            </div>
+            <div class="benefit-item">
+                <h3>Retroalimentación inmediata</h3>
+                <p>DriveSmart proporciona retroalimentación inmediata tras haber rendido alguna evaluación para indicar las pautas por mejorar.</p>
+            </div>
+    </section>
+    <!-- About Us -->
+    <section class="about-us" id="Nosotros">
+        <h2>Misión</h2>
+        <p>Queremos reducir las alarmantes cantidades de muertes anuales por accidentes de tránsito, empezando con el Perú para disminuir la violencia en el país.</p>
+        <img src="assets/imagenes/mision.jpg" alt="Misión" class="about-image">
+        <h2>Visión</h2>
+        <p> Buscamos convertirnos en la plataforma número 1 de aprendizaje sobre seguridad vial en Latinoamérica, siendo una herramienta intuitiva que ayuda en el aprendizaje en el sector relacionado al tránsito.</p>
+        <img src="assets/imagenes/Vision.jpg" alt="Visión" class="about-image">
+    </section>
+        <!-- Contact -->    
+    <section class="contact" id="contact"></section>    
+    </main>
+
 </body>
 </html>

@@ -1,0 +1,92 @@
+/* ===== HEADER ===== */
+header {
+    background-color: #8FA8D8;
+    padding: 10px 30px;
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* ===== LOGO ===== */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo img {
+    width: 55px;
+    height: auto;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+/* ===== LINKS ===== */
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 40px;
+}
+
+.nav-links li {
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 15px;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    opacity: 0.8;
+}
+
+/* ===== BOTONES ===== */
+.navbar_actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.btn-get-started,
+.btn-sign-up {
+    text-decoration: none;
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 600;
+    border-radius: 999px;
+    transition: 0.3s;
+}
+
+/* Iniciar Sesión */
+.btn-get-started {
+    background-color: #E68A2E;
+    color: white;
+    padding: 12px 22px;
+}
+
+/* Registrarse */
+.btn-sign-up {
+    background-color: #1F3B6D;
+    color: white;
+    padding: 12px 22px;
+}
+
+.btn-get-started:hover,
+.btn-sign-up:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+}

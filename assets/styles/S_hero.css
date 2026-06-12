@@ -1,0 +1,23 @@
+.hero {
+     position: relative;
+    display: flex;
+    width: 100%;
+    height: 80vh; /* Altura completa de la pantalla */
+       background: 
+      linear-gradient(
+        rgba(139, 195, 226, 0.164), 
+        rgba(44, 44, 44, 0.743)
+      ),
+      url("../imagenes/inicio.jpg");
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff; /* Texto blanco para contraste con el fondo */
+    font-family: 'Inter', sans-serif;
+    background-size: cover; /* Escala la imagen para cubrir el área */
+    background-repeat: no-repeat; /* Evita repetición */
+    background-position: center center; /* Centra la imagen */
+      /*padding: 40px 20px;*/
+
+}
