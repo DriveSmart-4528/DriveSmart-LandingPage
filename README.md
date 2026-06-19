@@ -1,8 +1,6 @@
 <!-- markdownlint-disable MD033 MD047 MD013 MD041 MD036 -->
-![alt text](assets/images/Banner-UPC.png)
-
 <div align="center">
-
+<img src="assets/images/UPC-Logo.png" alt="Logo UPC" style="width: 150px; margin-right: 20px; border-radius: 10%;">
 <h1 style="text-align: center;">Universidad Peruana de Ciencias Aplicadas</h1><br>
 
 <h3 style="text-align: center; font-weight: normal; font-size: 22px; margin-top: 0;">
