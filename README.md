@@ -1,3 +1,4 @@
+<!-- markdownlint-disable MD033 MD047 MD013 MD041 MD036 -->
 ![alt text](assets/images/Banner-UPC.png)
 
 <div align="center">
@@ -18,7 +19,7 @@
 
 <h2 style="text-align: center;">
   <strong>DriveSmart - Landing Page Work-in-progress</strong>
-</h2><br><br>
+</h2>
 
 <p align="center"><strong>Docente:</strong> Morales Arevalo Juan Carlos</p><br><br>
 
@@ -55,4 +56,23 @@
 Lima, 20 de Junio del 2026
 </div>
 </div>
+
 <div style="page-break-after: always;"></div>
+
+## **Segmentos Objetivo**
+
+El proyecto **DriveSmart** se enfoca principalmente en dos grupos de usuarios, los cuales han sido identificados debido a la alta exposición a un entorno vial y a su impacto en la seguridad de tránsito en Lima Metropolitana.
+
+**Estudiantes universitarios conductores**
+
+Este segmento está conformado por jóvenes universitarios que conducen de manera frecuente como parte de su rutina diaria, principalmente para trasladarse hacia sus centros de estudio, trabajo u otras actividades personales. Aunque muchos de ellos ya cuentan con licencia de conducir, todavía se encuentran en una etapa de desarrollo de experiencia práctica y adaptación a situaciones reales de tránsito.
+
+Si bien  conocen las normas básicas de seguridad vial, suelen tener dificultades para aplicarlas correctamente en situaciones de estrés, tráfico intenso o presión por el tiempo, lo que puede generar decisiones inseguras al conducir. Además, presentan una alta afinidad con herramientas digitales y aplicaciones móviles, mostrando disposición hacia soluciones tecnológicas que les permitan mejorar sus hábitos y experiencia de conducción.
+
+**Trabajadores de transporte habituales**
+
+Este grupo incluye a conductores que usan vehículos para trabajar, como taxistas, conductores de autobuses, repartidores y choferes de empresas. Pasan mucho tiempo al volante, lo que los expone a situaciones peligrosas en las calles.
+
+Aunque tienen experiencia, algunos de ellos desarrollan malos hábitos debido a la rutina, el estrés laboral o la falta de actualización sobre las normas del tráfico. Esto puede llevar a comportamientos peligrosos como conducir de manera imprudente, no respetar las señales de tráfico o conducir de manera agresiva.
+
+Ambos segmentos son fundamentales para abordar la problemática de la seguridad vial en Lima Metropolitana, ya que representan tanto a conductores jóvenes que aún se encuentran desarrollando experiencia práctica, como a conductores experimentados que enfrentan presión constante en su rutina laboral. Trabajar con ambos grupos permitirá fomentar mejores hábitos de conducción, reducir riesgos y contribuir a una cultura vial más segura y responsable.
