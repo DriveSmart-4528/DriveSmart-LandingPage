@@ -49,11 +49,20 @@
     width: 50%;
 }
 
-.course-item {
-    background-color: #ffffff;
+.course-item-1 {
+    background-color: #F36813;
     border-radius: 10px;
     padding: 15px 20px;
     max-width: 260px;
+    color: #ffffff;
+}
+
+.course-item-2 {
+    background-color: #213E60;
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 260px;
+    color: #ffffff;
 }
 
 .benefits-Course img {
