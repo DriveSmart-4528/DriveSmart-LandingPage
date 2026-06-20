@@ -31,9 +31,29 @@
     text-align: justify;
     font-size: 18px;
 }
+.titulo_objetivo{
+    color: #27466b;
+    font-size: 40px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-left: 122px;
+}
 
-.titulo_objetivos{
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 20px;
+.caja_objetivos{
+    background-color: #FFE0B2;
+    border-radius: 25px;
+    padding: 25px 40px;
+    margin: 20px;
+    width: 800px;
+    margin-left: 120px;
+}
+
+.caja_objetivos ul{
+    margin: 0;
+    padding-left: 20px;
+}
+
+.caja_objetivos li{
+    font-size: 18px;
+    margin-bottom: 5px;
 }
