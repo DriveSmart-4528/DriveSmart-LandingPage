@@ -57,6 +57,8 @@ Lima, 20 de Junio del 2026
 
 <div style="page-break-after: always;"></div>
 
+
+
 ## **Segmentos Objetivo**
 
 El proyecto **DriveSmart** se enfoca principalmente en dos grupos de usuarios, los cuales han sido identificados debido a la alta exposición a un entorno vial y a su impacto en la seguridad de tránsito en Lima Metropolitana.
@@ -74,3 +76,47 @@ Este grupo incluye a conductores que usan vehículos para trabajar, como taxista
 Aunque tienen experiencia, algunos de ellos desarrollan malos hábitos debido a la rutina, el estrés laboral o la falta de actualización sobre las normas del tráfico. Esto puede llevar a comportamientos peligrosos como conducir de manera imprudente, no respetar las señales de tráfico o conducir de manera agresiva.
 
 Ambos segmentos son fundamentales para abordar la problemática de la seguridad vial en Lima Metropolitana, ya que representan tanto a conductores jóvenes que aún se encuentran desarrollando experiencia práctica, como a conductores experimentados que enfrentan presión constante en su rutina laboral. Trabajar con ambos grupos permitirá fomentar mejores hábitos de conducción, reducir riesgos y contribuir a una cultura vial más segura y responsable.
+
+## **Principales Características de la Solución Digital**
+
+DriveSmart es una plataforma digital orientada a fortalecer la educación vial y promover una conducción más segura mediante herramientas de aprendizaje interactivas y contenido especializado. Las principales características de la solución son las siguientes:
+
+1. Cursos Interactivos de Educación Vial
+
+La plataforma ofrece cursos especializados sobre normas de tránsito, seguridad vial y buenas prácticas de conducción, permitiendo a los usuarios mejorar sus conocimientos de manera accesible y progresiva.
+
+2. Simulaciones de Situaciones Reales de Tránsito
+
+DriveSmart incorpora simulaciones basadas en escenarios reales de conducción, permitiendo a los usuarios practicar la toma de decisiones frente a riesgos y situaciones comunes en las vías.
+
+3. Seguimiento del Progreso de Aprendizaje
+
+Los usuarios pueden visualizar su avance dentro de los cursos, identificar módulos completados y monitorear su progreso durante el proceso de capacitación.
+
+4. Certificación de Competencias
+
+Al completar los cursos y actividades propuestas, los usuarios pueden obtener certificados que validen los conocimientos adquiridos en seguridad vial y conducción responsable.
+
+5. Estadísticas y Concientización Vial
+
+La plataforma presenta información relevante sobre accidentes de tránsito, indicadores de seguridad vial y datos estadísticos que buscan generar conciencia sobre la importancia de una conducción responsable.
+
+6. Recursos Multimedia e Interactivos
+
+DriveSmart integra videos explicativos, animaciones, preguntas prácticas y contenido multimedia que enriquecen la experiencia de aprendizaje y facilitan la comprensión de conceptos importantes.
+
+7. Gestión de Usuarios
+
+La solución permite el registro e inicio de sesión de usuarios, brindando acceso personalizado a cursos, simulaciones y seguimiento de progreso.
+
+8. Testimonios y Evidencia Social
+
+La plataforma muestra experiencias de otros conductores y estadísticas de usuarios certificados, fortaleciendo la confianza y credibilidad de la solución.
+
+9. Soporte y Comunicación
+
+DriveSmart ofrece canales de contacto, preguntas frecuentes y mecanismos de asistencia para resolver dudas y mejorar la experiencia de los usuarios.
+
+10. Actualización Continua de Buenas Prácticas
+
+La plataforma proporciona consejos de conducción, recomendaciones de seguridad vial y contenido actualizado sobre normas de tránsito para fomentar el aprendizaje continuo.
