@@ -5,7 +5,9 @@
 }
 
 .benefits h2 {
+    color: #00215E;
     margin-bottom: 30px;
+    font-family: "Monsterrat", 
 }
 
 .benefits-container {
@@ -14,6 +16,7 @@
     justify-content: center;
     gap: 20px;
     margin-bottom: 50px;
+    font-family: "dmsans", sans-serif;
 }
 
 .benefit-item {
