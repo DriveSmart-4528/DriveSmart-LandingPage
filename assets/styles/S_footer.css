@@ -1,0 +1,35 @@
+.seccion_footer {
+    background-color: #213E60;
+    padding: 20px 40px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-text {
+    color: #ffffff;
+}
+
+.footer-right {
+    display: flex;
+    gap: 50px;
+}
+
+.icono {
+    width: 57.14px;
+    height: 57.14px;
+    background-color: #E68C3A;
+    border-radius: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.icono i {
+    color: #000000;
+    font-size: 24px;
+}
