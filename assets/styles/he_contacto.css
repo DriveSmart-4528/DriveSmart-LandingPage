@@ -1,0 +1,78 @@
+/*SECCION CONTACTO*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.seccion_contacto {
+  padding: 40px;
+  background-color: #f0ebe3;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+.titulo {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 700;
+  color: #1a2f5e;
+  margin-bottom: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.contenedor_contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+.div_gral_formulario {
+  width: 400px;
+}
+
+.campo {
+  margin-bottom: 20px;
+}
+
+.campo label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: #e07b00;
+  font-weight: bold;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  border: 2px solid #e07b00;
+  border-radius: 20px;
+  padding: 12px;
+  outline: none;
+}
+
+.formulario textarea {
+  height: 120px;
+  resize: none;
+}
+
+.formulario button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 20px;
+  background-color: #1a2f5e;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.imagen_contacto img {
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 25px;
+}

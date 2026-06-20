@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/styles/S_hero.css">
     <link rel="stylesheet" href="assets/styles/S_faq.css">
     <link rel="stylesheet" href="assets/styles/S_testimonials.css">
+    <link rel="stylesheet" href="assets/styles/he_contacto.css">
 </head>
 <body>
   <!-- HEADER & NAVBAR -->
@@ -179,9 +180,46 @@
         </div>
     </section>
         <!-- Contact -->    
-    <section class="contact" id="contact">
-        
-    </section>  
+    <section class="seccion_contacto">
+      <h2 class="titulo">-------- Contacto --------</h2>
+
+      <div class="contenedor_contacto">
+        <!-- FORMULARIO -->
+        <div class="div_gral_formulario">
+          <form class="formulario">
+            <div class="campo">
+              <label for="nombre">Nombre Completo</label>
+              <input type="text" id="nombre" name="nombre" />
+            </div>
+
+            <div class="campo">
+              <label for="telefono">Teléfono</label>
+              <input type="text" id="telefono" name="telefono" />
+            </div>
+
+            <div class="campo">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" />
+            </div>
+
+            <div class="campo">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje"></textarea>
+            </div>
+
+            <button type="submit">Enviar mensaje</button>
+          </form>
+        </div>
+
+        <!-- IMAGEN -->
+        <div class="imagen_contacto">
+          <img
+            src="assets/images/contacto.jpg"
+            alt="imagen-contacto"
+          />
+        </div>
+      </div>
+    </section>
     <!--footer--> 
         <footer>
             <p>&copy; 2026 DriveSmart. Todos los derechos reservados.</p> 
