@@ -11,11 +11,11 @@
 }
 
 .titulo {
-  text-align: center;
-  font-size: 28px;
+  font-size: 2.5em;
+  margin-bottom: 20px;
   font-weight: 700;
-  color: #1a2f5e;
-  margin-bottom: 40px;
+  color: #213E60;
+  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -40,7 +40,7 @@
 .campo label {
   display: block;
   margin-bottom: 8px;
-  font-size: 14px;
+  font-size: 20px;
   color: #e07b00;
   font-weight: bold;
 }
