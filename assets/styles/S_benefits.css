@@ -7,7 +7,7 @@
 .benefits h2 {
     color: #00215E;
     margin-bottom: 30px;
-    font-family: "Monsterrat", 
+    font-family: "Monsterrat", sans-serif;
 }
 
 .benefits-container {
@@ -16,23 +16,27 @@
     justify-content: center;
     gap: 20px;
     margin-bottom: 50px;
-    font-family: "dmsans", sans-serif;
+    font-family: "Dm Sans", sans-serif;
 }
 
 .benefit-item {
-    background-color: #ffffff;
+    font-family: "Dm Sans", sans-serif;
+    background-color: #00215E;
+    color: #ffffff;
     border-radius: 12px;
     padding: 25px;
     max-width: 300px;
 }
 
 .benefit-item h3 {
+    color: #ffffff;
     margin-bottom: 10px;
 }
 
 .benefits-Course {
+    font-family: "Dm Sans", sans-serif;
     display: flex;
-    flex-direction: column;
+    /*flex-direction: column;*/
     align-items: center;
     gap: 30px;
 }
@@ -42,7 +46,7 @@
     flex-wrap: wrap;
     justify-content: center;
     gap: 15px;
-    width: 100%;
+    width: 50%;
 }
 
 .course-item {
@@ -52,8 +56,7 @@
     max-width: 260px;
 }
 
-.certificado-image {
-    display: block;
-    max-width: 500px;
-    width: 100%;
+.benefits-Course img {
+    display: flex;
+    width: 50%;
 }
