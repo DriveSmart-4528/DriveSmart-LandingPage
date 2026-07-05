@@ -13,8 +13,14 @@ header {
 /* ===== NAVBAR ===== */
 .navbar {
     display: flex;
-    justify-content: space-between;
+
     align-items: center;
+}
+.nav-menu{
+    flex:1;
+    align-items: center;
+    display:flex;
+    align-items:center;
 }
 
 /* ===== LOGO ===== */
@@ -32,6 +38,8 @@ header {
 
 /* ===== LINKS ===== */
 .nav-links {
+    flex: 1;
+    justify-content: center;
     display: flex;
     list-style: none;
     gap: 40px;
@@ -114,10 +122,11 @@ header {
     font-size: 32px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 780px) {
 
     .hamburguesa {
         display: block;
+        margin-left: auto;
     }
 
     .nav-menu {
@@ -142,7 +151,9 @@ header {
     }
 
     .navbar_actions {
-        
+        margin-top: 0.5rem;
+        display: flex;
+        flex-direction: column;
         gap: 8px
     }
 }
