@@ -142,6 +142,19 @@ header {
     }
 
     .navbar_actions {
-        display: none;
+        
+        gap: 8px
+    }
+}
+
+@media (max-width: 480px) {
+    .btn-get-started,
+    .btn-sign-up {
+        padding: 7px 14px;
+        font-size: 13.5px;
+    }
+
+    .navbar_actions {
+        gap: 6px;
     }
 }
