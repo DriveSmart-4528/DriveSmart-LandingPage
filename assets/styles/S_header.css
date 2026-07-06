@@ -8,12 +8,15 @@
 header {
     background-color: #8FA8D8;
     padding: 10px 30px;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
     display: flex;
-
+    
     align-items: center;
 }
 .nav-menu{
@@ -108,6 +111,10 @@ header {
     transform: translateY(-2px);
     opacity: 0.9;
 }
+
+html {
+    scroll-behavior: smooth;
+}   
 
 /* Botón hamburguesa oculto en escritorio */
 .hamburguesa {
