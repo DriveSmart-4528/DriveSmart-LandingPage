@@ -11,13 +11,19 @@ header {
     z-index: 100;
     position: fixed;
     width: 100%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 /* ===== NAVBAR ===== */
 .navbar {
     display: flex;
-    
     align-items: center;
+    justify-content: space-between;
+    max-width: 1400px;
+    margin: 0 auto;
 }
 .nav-menu{
     flex:1;
