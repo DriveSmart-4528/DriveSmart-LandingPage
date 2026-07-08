@@ -65,7 +65,71 @@
     color: #ffffff;
 }
 
+.course-item-3 {
+    background-color: #F36813;
+    border-radius: 10px;
+    padding: 15px 20px;
+    max-width: 260px;
+    color: #ffffff;
+}
+
 .benefits-Course img {
     display: flex;
     width: 50%;
+}
+
+@media (max-width: 768px) {
+    .benefits {
+        padding: 40px 20px;
+    }
+
+    .benefits h2 {
+        font-size: 30px;
+    }
+
+    .benefits-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .benefit-item {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+
+    .benefits-Course {
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .container-course {
+        width: 100%;
+    }
+
+    .course-item-1 {
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+    
+    .course-item-2 {
+        background-color: #F36813;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+
+    .course-item-3 {
+        background-color: #213E60;
+        width: 100%;
+        max-width: 400px;
+        box-sizing: border-box;
+    }
+
+    .benefits-Course img {
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+    }
 }
