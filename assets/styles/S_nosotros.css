@@ -57,3 +57,62 @@
     font-size: 18px;
     margin-bottom: 5px;
 }
+
+@media (max-width: 768px) {
+
+    .about-us{
+        padding: 30px 20px;
+    }
+
+    .fila_nosotros{
+        flex-direction: column;
+        gap: 25px;
+        margin-bottom: 40px;
+        text-align: center;
+    }
+
+    .fila_invertida{
+        flex-direction: column;
+    }
+
+    .contenedor_imagen{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .contenedor_imagen img{
+        width: 100%;
+        max-width: 350px;
+        height: auto;
+    }
+
+    .contenedor_texto{
+        width: 100%;
+    }
+
+    .contenedor_texto h2{
+        font-size: 32px;
+    }
+
+    .contenedor_texto p{
+        font-size: 16px;
+    }
+
+    .titulo_objetivo{
+        font-size: 32px;
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .caja_objetivos{
+        width: 100%;
+        margin: 20px auto;
+        padding: 20px;
+        box-sizing: border-box;
+    }
+
+    .caja_objetivos li{
+        font-size: 16px;
+    }
+}
