@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="assets/styles/S_faq.css">
     <link rel="stylesheet" href="assets/styles/S_contacto.css">
     <link rel="stylesheet" href="assets/styles/S_footer.css">
+    <link rel="stylesheet" href="assets/styles/S_IniciarSesion.css">
 
 </head>
 <body>
@@ -46,8 +47,8 @@
             <li><a href="#seccion_contacto">Contacto</a></li>
             </ul>
              <div class="navbar_actions">
-            <a href="" class="btn-get-started">Iniciar Sesión</a>
-            <a href="" class="btn-sign-up">Registrarse</a>
+            <a href="#" class="btn-get-started" id="btn-iniciar-sesion">Iniciar Sesión</a>
+            <a href="#" class="btn-sign-up" id="btn-registrarse">Registrarse</a>
          </div>
 
         
@@ -56,6 +57,7 @@
     </header>
    
     <main>
+
     <!-- Hero -->
     <section class="hero" id="Inicio">
         <div class="hero-content">
@@ -339,7 +341,31 @@
         </div>
     </section>
     </main>
+ <!--  Iniciar sesion  -->
+    <dialog id="IS">
+        <button class="btn-cerrar" id="cerrarIS" type="button">
+        <span class="material-icons">close</span>
+    </button>
+
+    <h2>Iniciar Sesión</h2>
+
+    <form>
+        <div class="campoIS">
+        <label for="username">Usuario</label>
+        <input type="text" id="username" required>
+        </div>
+        <div class="campoIS">
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" required>
+        </div>
+
+        <button class="btn-login" type="submit">
+            Iniciar Sesión
+        </button>
+    </form>
+    </dialog>
     <script src="assets/scripts/DesplegablePreguntas.js"></script>
     <script src="assets/scripts/menu-toggle.js"></script>
+    <script src="assets/scripts/VModalInciarSesion.js"></script>
 </body>
 </html> 
