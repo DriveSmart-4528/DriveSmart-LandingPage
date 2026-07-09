@@ -1,6 +1,6 @@
 .chat-float-btn {
     position: fixed;
-    bottom: 25px;
+    bottom: 50px; 
     right: 25px;
     width: 60px;
     height: 60px;
@@ -14,13 +14,13 @@
     justify-content: center;
     cursor: pointer;
     box-shadow: 0 4px 15px rgba(94, 23, 235, 0.4);
-    z-index: 1000;
+    z-index: 100;
     transition: all 0.3s ease;
 }
 
 .chat-float-btn:hover {
     transform: scale(1.1);
-    box-shadow: 0 6px 20px rgba(94, 23, 235, 0.5);
+    background: #213e60;
 }
 
 /* Chat Window */
