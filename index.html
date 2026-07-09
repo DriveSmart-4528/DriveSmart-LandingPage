@@ -24,6 +24,7 @@
     <link rel="stylesheet" href="assets/styles/S_contacto.css">
     <link rel="stylesheet" href="assets/styles/S_footer.css">
     <link rel="stylesheet" href="assets/styles/S_modal.css">
+    <link rel="stylesheet" href="assets/styles/S_chat.css">
 
 </head>
 <body>
@@ -392,10 +393,54 @@
         <a href="" class="btn-iniciar-sesionRS" id="btn-iniciar-sesionRS">Iniciar Sesión</a>
     </form>
     </dialog>
+
+    <!-- Floating Chat Button -->
+<button id="chat-float-btn" class="chat-float-btn">
+    <a class="fa-solid fa-comment-dots"></a>
+</button>
+
+<!-- Chat Window -->
+<div id="chat-window" class="chat-window">
+    <!-- Chat Header -->
+    <div class="chat-header">
+        
+        <div>
+            <h3>Chatbot</h3>
+            <span class="chat-status">En línea</span>
+        </div>
+        <button id="close-chat" class="close-chat-btn">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+    </div>
+
+    <!-- Chat -->
+    <div id="chat-messages" class="chat-messages">
+        <!--  -->
+        <div class="message bot">
+            <div class="message-content">
+                <p>Hola! ¿En qué puedo ayudarte hoy?</p>
+            </div>
+        </div>
+
+        <!-- Demo question suggestion -->
+        <div class="message-bot-suggestion">
+            <p onclick="sendDemoQuestion()">¿Qué cursos ofrece DriveSmart?</p>
+        </div>
+    </div>
+
+    <!-- Chat Input -->
+    <div class="chat-input-area">
+        <input type="text" id="chat-input" placeholder="Escribe tu mensaje...">
+        <button id="send-message-btn">
+            <i class="fa-solid fa-paper-plane"></i>
+        </button>
+    </div>
+   </div>
     <!-- Scripts -->
     <script src="assets/scripts/DesplegablePreguntas.js"></script>
     <script src="assets/scripts/menu-toggle.js"></script>
     <script src="assets/scripts/animation.js"></script>
     <script src="assets/scripts/modal.js"></script>
+    <script src="assets/scripts/chat.js"></script>
 </body>
 </html> 
