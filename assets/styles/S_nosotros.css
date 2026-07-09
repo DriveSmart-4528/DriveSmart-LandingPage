@@ -2,7 +2,7 @@
    SECCIÓN NOSOTROS
 ========================== */
 
-.about-us{
+.about-us {
     max-width: 1200px;
     margin: 0 auto;
     padding: 15px 30px 60px;
@@ -13,7 +13,7 @@
    FILAS (MISIÓN Y VISIÓN)
 ========================== */
 
-.fila_nosotros{
+.fila_nosotros {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -21,46 +21,61 @@
     margin-bottom: 80px;
 }
 
-.fila_invertida{
+.fila_invertida {
     flex-direction: row-reverse;
 }
 
 /* ==========================
-   IMÁGENES
+   IMÁGENES Y SUS EFECTOS
 ========================== */
 
-.contenedor_imagen{
+.contenedor_imagen {
     flex: 1;
     display: flex;
     justify-content: center;
 }
 
-.contenedor_imagen img{
+.contenedor_imagen img {
     width: 100%;
-    max-width: 410px;   /* Cambia este valor si quieres más grande o más pequeña */
+    max-width: 410px;
     height: 210px;
     object-fit: cover;
     border-radius: 20px;
+    /* Transición suave para el efecto hover */
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+
+/* Efecto Hover en las imágenes */
+.contenedor_imagen img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
 }
 
 /* ==========================
-   TEXTO
+   TEXTO Y SUS EFECTOS
 ========================== */
 
-.contenedor_texto{
+.contenedor_texto {
     flex: 1;
     max-width: 500px;
     margin-top: 15px;
+    /* Transición suave para el efecto hover */
+    transition: transform .35s ease;
 }
 
-.contenedor_texto h2{
+/* Efecto Hover en el contenedor de texto */
+.contenedor_texto:hover {
+    transform: translateY(-8px);
+}
+
+.contenedor_texto h2 {
     color: #27466b;
     font-size: 42px;
     margin-bottom: 20px;
     font-family: "Montserrat", sans-serif;
 }
 
-.contenedor_texto p{
+.contenedor_texto p {
     font-size: 18px;
     line-height: 1.8;
     text-align: justify;
@@ -68,48 +83,80 @@
 }
 
 /* ==========================
-   OBJETIVOS
+   OBJETIVOS Y SUS EFECTOS
 ========================== */
 
-.titulo_objetivo{
+.titulo_objetivo {
     text-align: center;
     color: #27466b;
     font-size: 42px;
     margin: 20px 0 30px;
     font-family: "Montserrat", sans-serif;
+    transition: transform .4s ease;
 }
 
-.caja_objetivos{
+.caja_objetivos {
     background-color: #FFE0B2;
     border-radius: 20px;
     padding: 30px 45px;
     max-width: 900px;
     width: 90%;
     margin: 0 auto;
+    transition: transform .4s ease, box-shadow .4s ease;
 }
 
-.caja_objetivos ul{
+/* Efectos Hover individuales para objetivos */
+.titulo_objetivo:hover {
+    transform: scale(1.02);
+}
+
+.caja_objetivos:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .18);
+}
+
+.caja_objetivos ul {
     margin: 0;
     padding-left: 25px;
 }
 
-.caja_objetivos li{
+.caja_objetivos li {
     font-size: 18px;
     margin-bottom: 12px;
     font-family: "DM Sans", sans-serif;
 }
 
 /* ==========================
+   ANIMACIÓN DE ENTRADA (SCROLL)
+========================== */
+
+/* Para usar esta animación sin que mueva bruscamente tu diseño, 
+   asegúrate de agregar la clase 'animacion' en tu HTML a los elementos 
+   que quieras que aparezcan (por ejemplo, a cada .fila_nosotros o a la .caja_objetivos).
+   Requerirás JavaScript (como un IntersectionObserver) para añadirle la clase '.visible'.
+*/
+.animacion {
+    opacity: 0; /* Opcional: hace que empiece invisible para mejorar el efecto */
+    transform: translateY(40px);
+    transition: transform .8s ease, opacity .8s ease;
+}
+
+.animacion.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* ==========================
    RESPONSIVE
 ========================== */
 
-@media (max-width: 768px){
+@media (max-width: 768px) {
 
-    .about-us{
+    .about-us {
         padding: 40px 20px;
     }
 
-    .fila_nosotros{
+    .fila_nosotros {
         flex-direction: column;
         align-items: center;
         text-align: center;
@@ -117,82 +164,41 @@
         margin-bottom: 50px;
     }
 
-    .fila_invertida{
+    .fila_invertida {
         flex-direction: column;
     }
 
-    .contenedor_texto{
+    .contenedor_texto {
         max-width: 100%;
         margin-top: 0;
     }
 
-    .contenedor_texto h2{
+    .contenedor_texto h2 {
         font-size: 34px;
     }
 
-    .contenedor_texto p{
+    .contenedor_texto p {
         font-size: 16px;
         text-align: center;
     }
 
-    .contenedor_imagen img{
+    .contenedor_imagen img {
         width: 100%;
         max-width: 350px;
         height: auto;
     }
 
-    .titulo_objetivo{
+    .titulo_objetivo {
         font-size: 34px;
     }
 
-    .caja_objetivos{
+    .caja_objetivos {
         width: 100%;
         padding: 25px;
         box-sizing: border-box;
     }
 
-    .caja_objetivos li{
+    .caja_objetivos li {
         font-size: 16px;
     }
-
-}
-
-.animacion{
-    transform: translateY(40px);
-    transition: all .8s ease;
-}
-.animacion.visible{
-    transform: translateY(0);
-}
-
-/*Imagenes*/
-.contenedor_imagen img{
-    transition: transform .4s ease, box-shadow .4s ease;
-}
-.contenedor_imagen img:hover{
-    transform: scale(1.05);
-    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-}
-
-/*Texto*/
-
-.contenedor_texto {
-    transition: transform .35s ease;
-}
-.contenedor_texto:hover{
-    transform:translateY(-8px);
-}
-/*Caja de objetivos*/
-.contenedor_objetivos:hover .titulo_objetivo{
-    transform: scale(1.02);
-}
-
-.contenedor_objetivos:hover .caja_objetivos{
-    transform: scale(1.02);
-    box-shadow: 0 10px 30px rgba(0,0,0,.18);
-}
-
-.titulo_objetivo,
-.caja_objetivos{
-    transition: transform .4s ease, box-shadow .4s ease;
 }
