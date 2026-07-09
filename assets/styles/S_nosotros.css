@@ -1,117 +1,158 @@
+/* ==========================
+   SECCIÓN NOSOTROS
+========================== */
+
 .about-us{
-    padding: 50px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px 30px 60px;
+    scroll-margin-top: 110px;
 }
+
+/* ==========================
+   FILAS (MISIÓN Y VISIÓN)
+========================== */
 
 .fila_nosotros{
     display: flex;
     justify-content: center;
-    align-items: center;
-    gap: 60px;
-    margin-bottom: 50px;
+    align-items: flex-start;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.fila_invertida{
+    flex-direction: row-reverse;
+}
+
+/* ==========================
+   IMÁGENES
+========================== */
+
+.contenedor_imagen{
+    flex: 1;
+    display: flex;
+    justify-content: center;
 }
 
 .contenedor_imagen img{
-    width: 350px;
-    height: 220px;
+    width: 100%;
+    max-width: 410px;   /* Cambia este valor si quieres más grande o más pequeña */
+    height: 210px;
     object-fit: cover;
-    border-radius: 25px;
+    border-radius: 20px;
 }
 
+/* ==========================
+   TEXTO
+========================== */
+
 .contenedor_texto{
-    width: 400px;
+    flex: 1;
+    max-width: 500px;
+    margin-top: 15px;
 }
 
 .contenedor_texto h2{
     color: #27466b;
-    margin-bottom: 15px;
-    font-size: 40px;
+    font-size: 42px;
+    margin-bottom: 20px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .contenedor_texto p{
-    text-align: justify;
     font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
 }
+
+/* ==========================
+   OBJETIVOS
+========================== */
+
 .titulo_objetivo{
+    text-align: center;
     color: #27466b;
-    font-size: 40px;
-    font-weight: bold;
-    margin-bottom: 15px;
-    margin-left: 122px;
+    font-size: 42px;
+    margin: 20px 0 30px;
+    font-family: "Montserrat", sans-serif;
 }
 
 .caja_objetivos{
     background-color: #FFE0B2;
-    border-radius: 25px;
-    padding: 25px 40px;
-    margin: 20px;
-    width: 800px;
-    margin-left: 120px;
+    border-radius: 20px;
+    padding: 30px 45px;
+    max-width: 900px;
+    width: 90%;
+    margin: 0 auto;
 }
 
 .caja_objetivos ul{
     margin: 0;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .caja_objetivos li{
     font-size: 18px;
-    margin-bottom: 5px;
+    margin-bottom: 12px;
+    font-family: "DM Sans", sans-serif;
 }
 
-@media (max-width: 768px) {
-    .about-us {
-        padding: 30px 20px;
+/* ==========================
+   RESPONSIVE
+========================== */
+
+@media (max-width: 768px){
+
+    .about-us{
+        padding: 40px 20px;
     }
 
-    .fila_nosotros {
+    .fila_nosotros{
         flex-direction: column;
-        gap: 25px;
-        margin-bottom: 40px;
+        align-items: center;
+        text-align: center;
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .fila_invertida{
+        flex-direction: column;
+    }
+
+    .contenedor_texto{
+        max-width: 100%;
+        margin-top: 0;
+    }
+
+    .contenedor_texto h2{
+        font-size: 34px;
+    }
+
+    .contenedor_texto p{
+        font-size: 16px;
         text-align: center;
     }
 
-    .fila_invertida {
-        flex-direction: column;
-    }
-
-    .contenedor_imagen {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
-
-    .contenedor_imagen img {
+    .contenedor_imagen img{
         width: 100%;
         max-width: 350px;
         height: auto;
     }
 
-    .contenedor_texto {
+    .titulo_objetivo{
+        font-size: 34px;
+    }
+
+    .caja_objetivos{
         width: 100%;
-    }
-
-    .contenedor_texto h2 {
-        font-size: 32px;
-    }
-
-    .contenedor_texto p {
-        font-size: 16px;
-    }
-
-    .titulo_objetivo {
-        font-size: 32px;
-        margin-left: 0;
-        text-align: center;
-    }
-
-    .caja_objetivos {
-        width: 100%;
-        margin: 20px auto;
-        padding: 20px;
+        padding: 25px;
         box-sizing: border-box;
     }
 
-    .caja_objetivos li {
+    .caja_objetivos li{
         font-size: 16px;
     }
+
 }
