@@ -1,0 +1,115 @@
+dialog{
+    border: none;
+    border-radius: 15px;
+    padding: 35px;
+    width: 380px;
+    max-width: 90%;
+    position: fixed;
+    z-index: 100;
+    box-shadow: 0 10px 35px rgba(0, 0, 0, 0.25);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Segoe UI", Arial, sans-serif;
+
+}
+dialog::backdrop{
+    background: rgba(0,0,0,.5);
+}
+/* FORMULARIO */
+.tituloIS {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 700;
+    color: #213E60;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+}
+.formularioIS {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.campoIS {
+    margin-bottom: 20px;
+}
+.campoIS label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    color: #213E60;
+    font-weight: bold;
+}
+
+.campoIS input, .campoIS textarea {
+    width: 100%;
+    border: 2px solid #213E60;
+    border-radius: 20px;
+    padding: 12px;
+    outline: none;
+}
+/*  Boton Iniciar Sesion */
+.btn-loginIS {
+    background-color: #213E60;
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+.btn-loginIS:hover {
+    background-color: #e07b00;
+}
+/*  Boton Registrarse */
+.btn-registrarseIS, .btn-iniciar-sesionRS {
+    text-align: center;
+    color: #e07b00;
+    padding: 12px 20px;
+    font-size: 16px;
+}
+.btn-registrarseIS:hover, .btn-iniciar-sesionRS:hover {
+    color: #213E60;
+}
+/* Boton Cerrar */
+.btn-cerrar{
+    position: absolute;
+    top: 12px;
+    right: 12px;
+
+    width: 38px;
+    height: 38px;
+
+    border: none;
+    background: transparent;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    cursor: pointer;
+    transition: .25s;
+}
+
+.btn-cerrar:hover{
+    background: #f2f2f2;
+    transform: rotate(90deg);
+}
+
+.btn-cerrar .material-icons{
+    font-size: 24px;
+    color: #555;
+}
+
+.btn-cerrar{
+    transition: .3s;
+}
+
+.btn-cerrar:hover .material-icons,
+.btn-cerrar:hover i{
+    color: #d32f2f;
+}
+
