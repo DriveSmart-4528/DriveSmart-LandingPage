@@ -156,3 +156,43 @@
     }
 
 }
+
+.animacion{
+    transform: translateY(40px);
+    transition: all .8s ease;
+}
+.animacion.visible{
+    transform: translateY(0);
+}
+
+/*Imagenes*/
+.contenedor_imagen img{
+    transition: transform .4s ease, box-shadow .4s ease;
+}
+.contenedor_imagen img:hover{
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+/*Texto*/
+
+.contenedor_texto {
+    transition: transform .35s ease;
+}
+.contenedor_texto:hover{
+    transform:translateY(-8px);
+}
+/*Caja de objetivos*/
+.contenedor_objetivos:hover .titulo_objetivo{
+    transform: scale(1.02);
+}
+
+.contenedor_objetivos:hover .caja_objetivos{
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0,0,0,.18);
+}
+
+.titulo_objetivo,
+.caja_objetivos{
+    transition: transform .4s ease, box-shadow .4s ease;
+}
