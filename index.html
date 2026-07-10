@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="assets/styles/S_footer.css">
     <link rel="stylesheet" href="assets/styles/S_modal.css">
     <link rel="stylesheet" href="assets/styles/S_chat.css">
-
+    <link rel="stylesheet" href="assets/styles/S_infoCursos.css">
     <link rel="stylesheet" href="assets/styles/S_tips.css">
 
     <link rel="stylesheet" href="assets/styles/S_certificados.css">
@@ -173,25 +173,65 @@
         </div>
         <h2>Obten certificados de los siguientes cursos:</h2> 
         <div class="benefits-Course">
-            <div class="container-course">
-                <div class="course-item-1">
+    <div class="container-course">
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
                     <h3>Conducción en Contexto Crítico</h3>
                 </div>
-                <div class="course-item-2">
-                    <h3>Normas y de Concientización Legal</h3>
-                </div>
-                <div class="course-item-3">
-                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                <div class="course-card-back">
+                    <p>Aprende a mantener el control y tomar buenas decisiones en situaciones de tráfico estresante o maniobras imprevistas.</p>
                 </div>
             </div>
-            <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado" >
         </div>
+
+        <div class="course-item-2" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Normas y de Concientización Legal</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Repasa las normas de tránsito esenciales y entiende el rol del SOAT en la conducción responsable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-3" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Módulos cortos pensados para universitarios: rutas seguras, señales y confianza al volante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Hábitos para evitar la conducción agresiva en jornadas largas, optimizando tiempo sin poner en riesgo a terceros.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Pasos iniciales y decisiones correctas al presenciar o verse involucrado en un accidente de tránsito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado">
+</div>
+
     </section>     
 
 <!-- CONTADOR DE CERTIFICADOS -->

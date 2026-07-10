@@ -1,0 +1,94 @@
+.course-item-1,
+.course-item-2,
+.course-item-3 {
+    background: transparent;
+    border-radius: 10px;
+    padding: 0;
+    max-width: 260px;
+    width: 100%;
+    height: 140px;
+    perspective: 1000px;
+    cursor: pointer;
+}
+
+.course-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+@media (hover: hover) {
+    .course-item-1:hover .course-card-inner,
+    .course-item-2:hover .course-card-inner,
+    .course-item-3:hover .course-card-inner {
+        transform: rotateY(180deg);
+    }
+}
+
+/* Click en mobile/touch (clase agregada por JS) */
+.course-item-1.flipped .course-card-inner,
+.course-item-2.flipped .course-card-inner,
+.course-item-3.flipped .course-card-inner {
+    transform: rotateY(180deg);
+}
+
+.course-card-front,
+.course-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    box-sizing: border-box;
+    color: #ffffff;
+}
+
+.course-card-front h3 {
+    margin: 0;
+}
+
+.course-card-back {
+    transform: rotateY(180deg);
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.course-card-back p {
+    margin: 0;
+}
+
+/* Colores por item, aplicados al front y back */
+.course-item-1 .course-card-front,
+.course-item-1 .course-card-back {
+    background-color: #F36813;
+}
+
+.course-item-2 .course-card-front,
+.course-item-2 .course-card-back {
+    background-color: #213E60;
+}
+
+.course-item-3 .course-card-front,
+.course-item-3 .course-card-back {
+    background-color: #F36813;
+}
+
+@media (max-width: 768px) {
+    .course-item-2 .course-card-front,
+    .course-item-2 .course-card-back {
+        background-color: #F36813;
+    }
+
+    .course-item-3 .course-card-front,
+    .course-item-3 .course-card-back {
+        background-color: #213E60;
+    }
+}
