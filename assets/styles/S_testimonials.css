@@ -30,7 +30,7 @@
 
 .video-card{
 
-    background:white;
+    background:rgb(255, 255, 255);
 
     border-radius:20px;
 
@@ -43,9 +43,7 @@
 }
 
 .video-card:hover{
-
     transform:translateY(-10px);
-
 }
 
 .video-card iframe{
@@ -71,7 +69,7 @@
     margin-left:20px;
 
     color:#666;
-
+}
 .testimonial-item p {
     border: 2px solid #F28C28;
     border-radius: 20px;
