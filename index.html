@@ -29,6 +29,7 @@
     <link rel="stylesheet" href="assets/styles/S_tips.css">
 
     <link rel="stylesheet" href="assets/styles/S_certificados.css">
+    <link rel="stylesheet" href="assets/styles/S_pregunta.css">
 
 
 </head>
@@ -67,7 +68,9 @@
         <div class="hero-content">
         <h1 class="hero-title">Seguridad | Confianza | Aprendizaje</h1>
         <p class="hero-subtitle">Aprende junto a nosotros a mejorar tu forma de conducir y aplica buenas practicas al momento de mobilizarte</p>
-        <a href="" class="hero-button">Empieza ahora</a>
+        <a href="#" class="hero-button" id="boton-pregunta">
+    Empieza ahora
+        </a>
         </div>
     </section>
     <!-- ESTADÍSTICAS E IMPACTO -->
@@ -564,5 +567,31 @@
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/chat.js"></script>
     <script src="assets/scripts/contador.js"></script>
+    <script src="assets/scripts/pregunta.js"></script>
+  
+
+<!-- CHAT DE PREGUNTAS -->
+<div class="pregunta-flotante">
+
+    <div class="pregunta-chat" id="pregunta-chat">
+
+        <div class="pregunta-header">
+
+            <span>🤖 DriveSmart</span>
+
+            <button id="cerrar-pregunta" class="cerrar-pregunta">
+                &times;
+            </button>
+
+        </div>
+
+        <div class="pregunta-body">
+            <p id="texto-pregunta"></p>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html> 
