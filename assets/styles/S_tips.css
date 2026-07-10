@@ -9,7 +9,7 @@
     font-weight: 700;
     color: #1F3557;
     margin-bottom: 20px;
-    font-family: "Segoe UI", Arial, sans-serif;
+    font-family: "DM Sans", sans-serif;
 }
 
 .tips-description{
@@ -56,10 +56,12 @@
     font-size: 1.2rem;
     margin-bottom: 15px;
     font-weight: 700;
+    font-family: "DM Sans", sans-serif;
     
 }
 
 .tip-item p{
     font-size: .95rem;
+    font-family: "DM Sans", sans-serif;
     line-height: 1.6;
 }

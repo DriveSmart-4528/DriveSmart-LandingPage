@@ -1,0 +1,83 @@
+.pasos-section{
+    padding: 70px 8%;
+    background: #f7f5f3;
+    text-align: center;
+}
+
+.pasos-section h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #143a72;
+    margin-bottom: 60px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.steps-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.step{
+    flex: 1;
+    min-width: 180px;
+    padding: 20px;
+    border-radius: 12px;
+
+    transition: transform .35s ease, box-shadow .35s ease;
+}
+.step:hover{
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,.15);
+}
+
+.step-icon{
+    position: relative;
+    margin: 0 auto 20px;
+}
+
+.step-icon img{
+    width: 120px;
+    height: 105px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.step-number{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+    width: 26px;
+    height: 30px;
+    top: -05px; /* Lo baja lo suficiente para que muerda el círculo azul */
+    left: 50%; /* Lo posiciona en el eje central */
+    transform: translateX(-50%); /* Lo centra perfectamente sobre ese eje */
+    background: #f26c21;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 14px;
+    font-weight: bold;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "DM Sans", sans-serif;
+}
+
+.step h3{
+    color: #143a72;
+    font-size: 23px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.step p{
+    color: #252525;
+    font-size: 16px;
+    margin-bottom: 12px;
+    font-family: "DM Sans", sans-serif;
+}
