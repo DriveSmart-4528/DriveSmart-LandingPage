@@ -52,7 +52,7 @@
     right: -8px;
     width: 26px;
     height: 30px;
-    top: -05px; /* Lo baja lo suficiente para que muerda el círculo azul */
+    top: -20px; /* Lo baja lo suficiente para que muerda el círculo azul */
     left: 50%; /* Lo posiciona en el eje central */
     transform: translateX(-50%); /* Lo centra perfectamente sobre ese eje */
     background: #f26c21;
@@ -80,4 +80,19 @@
     font-size: 16px;
     margin-bottom: 12px;
     font-family: "DM Sans", sans-serif;
+}
+
+@media (max-width: 768px) {
+    .pasos-section {
+        padding: 40px 20px;
+    }
+
+    .pasos-section h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .steps-container {
+        gap: 20px;
+    }
 }

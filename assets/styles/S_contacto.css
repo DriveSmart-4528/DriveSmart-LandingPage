@@ -110,12 +110,23 @@
 }
 
 @media (max-width: 768px) {
+
+     .contenido_derecha {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .texto_contacto p,
+    .texto_contacto span {
+        font-size: 18px;
+    }
+
   .seccion_contacto {
     padding: 40px 20px;
   }
 
   .titulo {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
 
   .contenedor_contacto {

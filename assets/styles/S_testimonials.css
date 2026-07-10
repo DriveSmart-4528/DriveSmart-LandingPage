@@ -99,3 +99,26 @@
     line-height:1.6;
 
 }
+
+@media (max-width: 768px) {
+    .testimonials {
+        padding: 40px 20px;
+    }
+
+    .testimonials h2 {
+        font-size: 28px;
+        margin-bottom: 30px;
+    }
+
+    .testimonials-grid {
+        grid-template-columns: 1fr; /* una columna en mobile, sin depender de minmax */
+        gap: 25px;
+    }
+}
+
+@media (max-width: 400px) {
+    .testimonial-item p {
+        font-size: 0.9rem;
+        padding: 15px;
+    }
+}
