@@ -25,6 +25,12 @@
     <link rel="stylesheet" href="assets/styles/S_footer.css">
     <link rel="stylesheet" href="assets/styles/S_modal.css">
     <link rel="stylesheet" href="assets/styles/S_chat.css">
+    <link rel="stylesheet" href="assets/styles/S_infoCursos.css">
+    <link rel="stylesheet" href="assets/styles/S_tips.css">
+
+    <link rel="stylesheet" href="assets/styles/S_certificados.css">
+    <link rel="stylesheet" href="assets/styles/S_pregunta.css">
+
 
 </head>
 <body>
@@ -62,7 +68,9 @@
         <div class="hero-content">
         <h1 class="hero-title">Seguridad | Confianza | Aprendizaje</h1>
         <p class="hero-subtitle">Aprende junto a nosotros a mejorar tu forma de conducir y aplica buenas practicas al momento de mobilizarte</p>
-        <a href="" class="hero-button">Empieza ahora</a>
+        <a href="#" class="hero-button" id="boton-pregunta">
+    Empieza ahora
+        </a>
         </div>
     </section>
     <!-- ESTADÍSTICAS E IMPACTO -->
@@ -168,26 +176,142 @@
         </div>
         <h2>Obten certificados de los siguientes cursos:</h2> 
         <div class="benefits-Course">
-            <div class="container-course">
-                <div class="course-item-1">
+    <div class="container-course">
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
                     <h3>Conducción en Contexto Crítico</h3>
                 </div>
-                <div class="course-item-2">
-                    <h3>Normas y de Concientización Legal</h3>
-                </div>
-                <div class="course-item-3">
-                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                <div class="course-card-back">
+                    <p>Aprende a mantener el control y tomar buenas decisiones en situaciones de tráfico estresante o maniobras imprevistas.</p>
                 </div>
             </div>
-            <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado" >
         </div>
-    </section>
+
+        <div class="course-item-2" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Normas y de Concientización Legal</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Repasa las normas de tránsito esenciales y entiende el rol del SOAT en la conducción responsable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-3" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Módulos cortos pensados para universitarios: rutas seguras, señales y confianza al volante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Hábitos para evitar la conducción agresiva en jornadas largas, optimizando tiempo sin poner en riesgo a terceros.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Pasos iniciales y decisiones correctas al presenciar o verse involucrado en un accidente de tránsito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado">
+</div>
+
+    </section>     
+
+<!-- CONTADOR DE CERTIFICADOS -->
+<section class="certificados" id="Certificados">
+
+    <div class="certificados-contenido">
+
+        <h2>Conductores certificados</h2>
+
+        <div class="contador">
+            <span id="contador-certificados">0</span><span>+</span>
+        </div>
+
+        <p class="descripcion">
+            Más de <strong>12 540 conductores</strong> han obtenido certificados
+            mediante los cursos de DriveSmart, fortaleciendo sus conocimientos
+            sobre seguridad vial y conducción responsable.
+        </p>
+
+    </div>
+
+</section>
+
+    <!-- Tips -->
+       <section class="tips" id="Consejos">
+        <div class="tips-container">
+
+        <h2>Consejos para conducir más seguro en Lima</h2>
+
+        <p class="tips-description">
+            Aprende recomendaciones prácticas para anticiparte a los riesgos y tomar
+            mejores decisiones al volante, basadas en situaciones reales del tránsito limeño.
+        </p>
+
+        <div class="tips-cards">
+
+            <!-- Tarjeta 1 -->
+            <div class="tip-item">
+                <img src="assets/images/Consejos/consejo1.png" alt="Conductores impredecibles" class="tip-image">
+
+                <h3>Anticípate a los conductores impredecibles</h3>
+
+                <p>
+                    No asumas que todos respetarán las normas.
+                    Mantén una actitud defensiva.
+                </p>
+            </div>
+
+            <!-- Tarjeta 2 -->
+            <div class="tip-item">
+                <img src="assets/images/Consejos/consejo2.png" alt="Cruces peligrosos" class="tip-image">
+
+                <h3>Reduce la velocidad en cruces</h3>
+
+                <p>
+                    Observa ambos lados antes de avanzar y
+                    prepárate para reaccionar ante maniobras inesperadas.
+                </p>
+            </div>
+
+            <!-- Tarjeta 3 -->
+            <div class="tip-item">
+                <img src="assets/images/Consejos/consejo3.png" alt="Puntos ciegos" class="tip-image">
+
+                <h3>Revisa siempre tus puntos ciegos</h3>
+
+                <p>
+                    Verifica los espejos antes de cambiar de carril
+                    y evita maniobras bruscas.
+                </p>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
     <!-- Testimonials -->
     <section class="testimonials">
         <h2>Testimonios</h2>
@@ -455,5 +579,32 @@
     <script src="assets/scripts/animation.js"></script>
     <script src="assets/scripts/modal.js"></script>
     <script src="assets/scripts/chat.js"></script>
+    <script src="assets/scripts/contador.js"></script>
+    <script src="assets/scripts/pregunta.js"></script>
+  
+
+<!-- CHAT DE PREGUNTAS -->
+<div class="pregunta-flotante">
+
+    <div class="pregunta-chat" id="pregunta-chat">
+
+        <div class="pregunta-header">
+
+            <span>🤖 DriveSmart</span>
+
+            <button id="cerrar-pregunta" class="cerrar-pregunta">
+                &times;
+            </button>
+
+        </div>
+
+        <div class="pregunta-body">
+            <p id="texto-pregunta"></p>
+        </div>
+
+    </div>
+
+</div>
+
 </body>
 </html> 

@@ -1,0 +1,67 @@
+.tips{
+    padding: 80px 8%;
+    background: #F5F5F5;
+    text-align: center;
+}
+
+.tips-container h2{
+    font-size: 42px;
+    font-weight: 700;
+    color: #1F3557;
+    margin-bottom: 20px;
+    font-family: "DM Sans", sans-serif;
+}
+
+.tips-description{
+    max-width: 750px;
+    margin: 0 auto 50px;
+    color: #555;
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: justify;
+    font-family: "DM Sans", sans-serif;
+}
+
+.tips-cards{
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.tip-item{
+    width: 260px;
+    background: #1F3557;
+    border-radius: 20px;
+    padding: 30px 25px;
+    color: white;
+    transition: .3s;
+}
+
+.tip-item:hover{
+    transform: translateY(-8px);
+}
+
+.tip-image{
+    width: 120px;
+    height: 120px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    background: #F6F7F5;
+    border-radius: 50%;
+    padding: 15px;
+}
+
+.tip-item h3{
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    font-weight: 700;
+    font-family: "DM Sans", sans-serif;
+    
+}
+
+.tip-item p{
+    font-size: .95rem;
+    font-family: "DM Sans", sans-serif;
+    line-height: 1.6;
+}
