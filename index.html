@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/styles/S_chat.css">
     <link rel="stylesheet" href="assets/styles/S_pasos.css">
 
+    <link rel="stylesheet" href="assets/styles/S_infoCursos.css">
     <link rel="stylesheet" href="assets/styles/S_tips.css">
 
     <link rel="stylesheet" href="assets/styles/S_certificados.css">
@@ -177,25 +178,65 @@
         </div>
         <h2>Obten certificados de los siguientes cursos:</h2> 
         <div class="benefits-Course">
-            <div class="container-course">
-                <div class="course-item-1">
+    <div class="container-course">
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
                     <h3>Conducción en Contexto Crítico</h3>
                 </div>
-                <div class="course-item-2">
-                    <h3>Normas y de Concientización Legal</h3>
-                </div>
-                <div class="course-item-3">
-                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
-                </div>
-                <div class="course-item-1">
-                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                <div class="course-card-back">
+                    <p>Aprende a mantener el control y tomar buenas decisiones en situaciones de tráfico estresante o maniobras imprevistas.</p>
                 </div>
             </div>
-            <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado" >
         </div>
+
+        <div class="course-item-2" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Normas y de Concientización Legal</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Repasa las normas de tránsito esenciales y entiende el rol del SOAT en la conducción responsable.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-3" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Fundamentos de Seguridad para Nuevos Conductores</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Módulos cortos pensados para universitarios: rutas seguras, señales y confianza al volante.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Cultura Preventiva y Conducción Profesional Eficiente</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Hábitos para evitar la conducción agresiva en jornadas largas, optimizando tiempo sin poner en riesgo a terceros.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="course-item-1" onclick="this.classList.toggle('flipped')">
+            <div class="course-card-inner">
+                <div class="course-card-front">
+                    <h3>Primeros Auxilios y Respuesta Inicial ante Accidentes de Tránsito</h3>
+                </div>
+                <div class="course-card-back">
+                    <p>Pasos iniciales y decisiones correctas al presenciar o verse involucrado en un accidente de tránsito.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <img class="certificado -image" src="assets/images/Certificado.png" alt="Certificado">
+</div>
+
     </section>     
 
 <!-- CONTADOR DE CERTIFICADOS -->
@@ -274,29 +315,42 @@
 </section>
 
     <!-- Testimonials -->
-    <section class="testimonials" id="Testimonios">
-        <div class="testimonials-container">
-            <h2>Testimonios</h2>
-            <div class="testimonials-cards">
-                <div class="testimonial-item">
-                <img src="assets/images/testimonios/Renato.jpg" alt="Testimonial 1" class="testimonial-image">
-                <span class="testimonial-author">Renato Calvo</span>
-                <p>“Utilizando la plataforma he logrado reconocer algunas normas de transito que no conocia.”</p>
+    <section class="testimonials">
+        <h2>Testimonios</h2>
+
+        <div class="testimonials-grid">
+            <div class="video-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/s1Fa0oX-9f0?si=gFvLJGbIXhrID-UH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <h3>Kiara Gutierrez</h3>
+                <span>Estudiante Universitaria</span>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
             </div>
-            <div class="testimonial-item">
-                <img src="assets/images/testimonios/roberto.jpg" alt="Testimonial 2" class="testimonial-image"> 
-                <span class="testimonial-author">Roberto Quispe</span>
-                <p>“Gracias a DriveSmart conozco buenas practicas al momento de conducir y se como aplicarlas.”</p>
-               
+
+            <div class="video-card">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/23LAO166-oM?si=YUPD4nAyGuIRwvMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                <h3>Joaquin Cruzalegui</h3>
+                <span>Estudiante Universitario</span>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
             </div>
-             <div class="testimonial-item">
-                <img src="assets/images/testimonios/Sofia.jpg" alt="Testimonial 3" class="testimonial-image">
-                <span class="testimonial-author">Sofía Villalba</span>
-                <p>“Las simulaciones que rendí fueron muy útiles para ver que hacer en situaciones específicas.”</p>
-                
-            </div>
+
+            <div class="video-card">
+                <iframe
+                    src="https://www.youtube.com/embed/ID_VIDEO_3"
+                    title="Testimonio 3"
+                    allowfullscreen>
+                </iframe>
+                <h3>Juan Torres</h3>
+                <span>Estudiante Universitario</span>
+                <div class="stars">
+                    ⭐⭐⭐⭐⭐
+                </div>
             </div>
         </div>
+
     </section>
 
     <section class="pasos-section" id="pasos-section">
