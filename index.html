@@ -315,8 +315,8 @@
 </section>
 
     <!-- Testimonials -->
-    <section class="testimonials">
-        <h2>Testimonios</h2>
+    <section class="testimonials" id="Testimonios">
+        <h2>Lo que dicen nuestros conductores</h2>
 
         <div class="testimonials-grid">
             <div class="video-card">
@@ -329,7 +329,7 @@
             </div>
 
             <div class="video-card">
-                <iframe width="560" height="315" src="https://www.youtube.com/embed/23LAO166-oM?si=YUPD4nAyGuIRwvMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" ></iframe>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/23LAO166-oM?si=YUPD4nAyGuIRwvMl" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
                 <h3>Joaquin Cruzalegui</h3>
                 <span>Estudiante Universitario</span>
                 <div class="stars">
@@ -338,13 +338,9 @@
             </div>
 
             <div class="video-card">
-                <iframe
-                    src="https://www.youtube.com/embed/ID_VIDEO_3"
-                    title="Testimonio 3"
-                    allowfullscreen>
-                </iframe>
-                <h3>Juan Torres</h3>
-                <span>Estudiante Universitario</span>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/_kLC72I3g2A?si=pHDRY4oARUNcB_J4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+                <h3>Gael Alonso</h3>
+                <span>Repartidor</span>
                 <div class="stars">
                     ⭐⭐⭐⭐⭐
                 </div>
@@ -622,7 +618,14 @@
         <a href="" class="btn-iniciar-sesionRS" id="btn-iniciar-sesionRS">Iniciar Sesión</a>
     </form>
     </dialog>
-
+    <!-- Bienvenida -->
+    <dialog id="bienvenida">
+        <div class="contenido-bienvenida">
+            <span class="material-icons icono-bienvenida">check_circle</span>
+            <h2 class="tituloIS">¡Bienvenido al sistema!</h2>
+            <p class="texto-bienvenida" id="texto-bienvenida"></p>
+        </div>
+    </dialog>
     <!-- Floating Chat Button -->
 <button id="chat-float-btn" class="chat-float-btn">
     <a class="fa-solid fa-comment-dots"></a>
@@ -634,7 +637,7 @@
     <div class="chat-header">
         
         <div>
-            <h3>Chatbot</h3>
+            <h3>🤖Chatbot</h3>
             <span class="chat-status">En línea</span>
         </div>
         <button id="close-chat" class="close-chat-btn">
@@ -665,17 +668,7 @@
         </button>
     </div>
    </div>
-    <!-- Scripts -->
-    <script src="assets/scripts/DesplegablePreguntas.js"></script>
-    <script src="assets/scripts/menu-toggle.js"></script>
-    <script src="assets/scripts/animation.js"></script>
-    <script src="assets/scripts/modal.js"></script>
-    <script src="assets/scripts/chat.js"></script>
-    <script src="assets/scripts/contador.js"></script>
-    <script src="assets/scripts/pregunta.js"></script>
-  
-
-<!-- CHAT DE PREGUNTAS -->
+   <!-- CHAT DE PREGUNTAS -->
 <div class="pregunta-flotante">
 
     <div class="pregunta-chat" id="pregunta-chat">
@@ -697,6 +690,14 @@
     </div>
 
 </div>
+    <!-- Scripts -->
+    <script src="assets/scripts/DesplegablePreguntas.js"></script>
+    <script src="assets/scripts/menu-toggle.js"></script>
+    <script src="assets/scripts/animation.js"></script>
+    <script src="assets/scripts/modal.js"></script>
+    <script src="assets/scripts/chat.js"></script>
+    <script src="assets/scripts/contador.js"></script>
+    <script src="assets/scripts/pregunta.js"></script>
 
 </body>
 </html> 

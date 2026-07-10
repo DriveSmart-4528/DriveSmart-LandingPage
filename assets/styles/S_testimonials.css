@@ -11,7 +11,7 @@
     text-align:center;
 
     color:#24476D;
-
+    font-family:"Montserrat",sans-serif;
     font-size:42px;
 
     margin-bottom:60px;
@@ -30,7 +30,7 @@
 
 .video-card{
 
-    background:white;
+    background:rgb(255, 255, 255);
 
     border-radius:20px;
 
@@ -43,9 +43,7 @@
 }
 
 .video-card:hover{
-
     transform:translateY(-10px);
-
 }
 
 .video-card iframe{
@@ -59,7 +57,7 @@
 }
 
 .video-card h3{
-
+    font-family:"DM Sans",sans-serif;
     margin:20px 20px 5px;
 
     color:#24476D;
@@ -71,7 +69,7 @@
     margin-left:20px;
 
     color:#666;
-
+}
 .testimonial-item p {
     border: 2px solid #F28C28;
     border-radius: 20px;
@@ -90,17 +88,14 @@
 .stars{
 
     margin:15px 20px;
-
     color:#F28C28;
-
     font-size:22px;
 
 }
 
 .video-card p{
-
+    font-family:"DM Sans",sans-serif;
     margin:0 20px 25px;
-
     line-height:1.6;
 
 }
