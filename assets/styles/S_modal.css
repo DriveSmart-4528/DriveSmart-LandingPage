@@ -113,3 +113,17 @@ dialog::backdrop{
     color: #d32f2f;
 }
 
+.contenido-bienvenida {
+    text-align: center;
+}
+
+.icono-bienvenida {
+    font-size: 60px;
+    color: #4CAF50;
+    margin-bottom: 10px;
+}
+
+.texto-bienvenida {
+    font-size: 18px;
+    color: #213E60;
+}

@@ -10,6 +10,11 @@ const btnCerrarRegistro = document.getElementById("cerrarRS"); //botón para cer
 const btnRegistroDesdeLogin = document.getElementById("btn-registrarseIS"); //botón para abrir el modal de registrarse desde el modal de iniciar sesión
 const btnLoginDesdeRegistro = document.getElementById("btn-iniciar-sesionRS"); //botón para abrir el modal de iniciar sesión desde el modal de registrarse
 
+const modalBienvenida = document.getElementById("bienvenida");
+const textoBienvenida = document.getElementById("texto-bienvenida");
+const formLogin = document.getElementById("formularioIS");
+const formRegistro = document.getElementById("formularioRS");
+
 let scrollPosition = 0;
 
 //Funciones
@@ -76,3 +81,30 @@ if (btnLoginDesdeRegistro) {
         abrirModal(modalLogin); 
     });
 }
+
+function mostrarBienvenida(nombreUsuario) {
+    textoBienvenida.textContent = `Hola, ${nombreUsuario}. Has iniciado sesión correctamente.`;
+    abrirModal(modalBienvenida);
+
+    // Se cierra sola después de un momento y lleva a la página principal
+    setTimeout(() => {
+        cerrarModal(modalBienvenida);
+        document.querySelector("main").scrollIntoView({ behavior: "smooth" });
+    }, 1500);
+}
+
+// INICIAR SESIÓN: al enviar el formulario
+formLogin.addEventListener("submit", (e) => {
+    e.preventDefault(); // evita que se recargue la página (simulado, no hay backend)
+    const usuario = document.getElementById("username").value;
+    cerrarModal(modalLogin);
+    mostrarBienvenida(usuario);
+});
+
+// REGISTRARSE: al enviar el formulario
+formRegistro.addEventListener("submit", (e) => {
+    e.preventDefault();
+    const usuario = formRegistro.querySelector("#username").value;
+    cerrarModal(modalRegistro);
+    mostrarBienvenida(usuario);
+});
